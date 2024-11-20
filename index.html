@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slap Extream</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="game">
+		<div id="gameFront">
+			<div id="loading-container">
+				<div id="loading-info">
+					<img id="loading-icon"  src="assets/rec.svg" alt="">
+					<h1 id="loading-header">Preparing your game</h1>
+					<p id="loading-body">Waiting for other player to join the game...</p>
+				</div>
+			</div>
+			<div id="game-home">
+				<div id="slide-container"></div>
+				<div id="image-container">
+					<div id="image">
+						<img id="playerHandImage" src="assets/hands/hand5.png" alt="">
+					</div>
+				</div>
+				<div id="player-container">
+					<div id="info"></div>
+					<input id="player-name"  type="text" placeholder="Enter your name">
+					<span class="win-score">win score:</span>
+					<div id="score-info-container">
+						<input id="score-range" type="range" min="1" max="15" value="1" />
+						<span id="rangeValue">1</span>
+					</div>
+					<div id="counter">	1 / 16 </div>
+
+					<div id="game-info">Hand Slap game is an entertaining game which is almost known and played by everyone in real life. What about having the same excitement on your phone, tablet or PC against your friend? First of all choose the hand model and then let the struggle begin! </div>
+					<button id="readyBtn">confirm</button>
+					<img class="navBtn" id="nextBtn" src="assets/next.svg">
+					<img class="navBtn" id="prevBtn" src="assets/prev.svg">
+				</div>
+			</div>
+		
+		</div>
+		
+		<div id="canvasContainer">
+			<canvas width="1200" height="1000" id="gameCanvas"></canvas>
+		</div>
+		
+		<div id="game-result">
+			<div id="winner">
+				<img id="game-over-icon" src="assets/game-over.svg" alt="">
+				<div id="winner-container">
+					<p>winner: </p>
+					<p id="winner-name">othman</p>
+				</div>
+				<div id="score-container">
+					<p>score: </p>
+					<p id="winner-score">10</p>
+				</div>
+				<button id="retry"  >play again</button>
+				<button id="start-over-btn"  >start over</button>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="main.js"> </script>
+</body>
+</html>
+
